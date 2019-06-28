@@ -75,4 +75,17 @@ client.on('message', message=>{
   }
 })
 
+<<<<<<< HEAD
 client.login(config.token);
+=======
+
+
+client.login(config.token);
+
+
+//ok ian
+//test revision number 2
+//Hello Ethan
+//Happy Birthday to me :)
+//doot doot
+>>>>>>> 7f37b95b9c49aed400daa446cc90ca88a5fab8c2
