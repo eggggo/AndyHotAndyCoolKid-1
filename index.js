@@ -6,8 +6,9 @@ const client  = new commando.Client({
 const config = require("./config.json");
 const ytdl = require('ytdl-core-discord')
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
+client.registry.registerGroup('random', 'Random');
+client.registry.registerDefaults();
+client.registry.registerCommandsIn(__dirname + "/commands");
 
 global.servers = [];
 
@@ -82,11 +83,4 @@ client.on('message', message=>{
   }
 })
 
-    voiceConnection.join().then(async connection => {
-
-      play(connection, args.toString());
-
-      await message.channel.send(`Now playing ${args}`);
-    }).catch(err => console.error(err));
-  }
-});
+client.login(config.token);
