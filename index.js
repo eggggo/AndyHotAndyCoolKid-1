@@ -81,6 +81,15 @@ client.on('message', message=>{
   if (message.content.includes('stop')){
     message.channel.send("no :)")
   }
+  if (message.content.includes('is')){
+    var rand = Math.floor(Math.random()*2)
+    if (rand === 0){
+      message.channel.send('yes :)')
+    }
+    if (rand === 1){
+      message.channel.send('no :)')
+    }
+  }
 })
 
 client.login(process.env.token);
