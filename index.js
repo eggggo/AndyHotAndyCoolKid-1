@@ -81,7 +81,7 @@ client.on('message', message=>{
   if (message.content.includes('stop')){
     message.channel.send("no :)")
   }
-  if (message.toLowerCase().content.includes('is')){
+  if (message.content.toLowerCase().includes('is')){
     var rand = Math.floor(Math.random()*3)
     if (rand === 0){
       message.channel.send('yes :)')
