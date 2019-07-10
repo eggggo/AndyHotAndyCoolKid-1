@@ -78,7 +78,7 @@ client.on('message', message=>{
   if (message.content.includes('who')){
     message.channel.send('me :)')
   }
-  else if (message.content.toLowerCase().includes('is ') || message.content.toLowerCase().includes('does ')){
+  else if (message.content.toLowerCase().substring(0,2).includes('is ') || message.content.toLowerCase().includes('does ')){
     var rand = Math.floor(Math.random()*3)
     if (rand === 0){
       message.channel.send('yes :)')
