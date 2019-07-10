@@ -72,14 +72,11 @@ client.on('message', message=>{
       message.channel.send('I don\'t feel so good')
     break;
   }
-  if (message.content.includes('who')){
-    message.channel.send('me :)')
-  }
   if (message.content.includes('thank')){
     message.channel.send("you're welcome :)")
   }
-  if (message.content.includes('stop')){
-    message.channel.send("no :)")
+  if (message.content.includes('who')){
+    message.channel.send('me :)')
   }
   else if (message.content.toLowerCase().includes('is ') || message.content.toLowerCase().includes('does ')){
     var rand = Math.floor(Math.random()*3)
@@ -92,6 +89,9 @@ client.on('message', message=>{
     else if (rand === 2){
       message.channel.send('perhaps :)')
     }
+  }
+  else if (message.content.includes('stop')){
+    message.channel.send("no :)")
   }
 })
 
