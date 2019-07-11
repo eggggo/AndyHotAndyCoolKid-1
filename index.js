@@ -83,7 +83,8 @@ client.on('message', message=>{
            message.content.toLowerCase().substring(0,7).includes('should ') ||
            message.content.toLowerCase().substring(0,4).includes('was ') || 
            message.content.toLowerCase().substring(0,5).includes('will ') || 
-           message.content.toLowerCase().substring(0,6).includes('could')) {
+           message.content.toLowerCase().substring(0,6).includes('could ') ||
+           message.content.toLowerCase().substring(0,4).includes('can ') ) {
     var rand = Math.floor(Math.random()*3)
     if (rand === 0){
       message.channel.send('yes :)')
