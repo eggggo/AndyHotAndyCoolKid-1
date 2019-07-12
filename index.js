@@ -71,16 +71,6 @@ client.on('message', message=>{
     case 'Mr. Stark':
       message.channel.send('I don\'t feel so good')
     break;
-    case '*ok gene*':
-      var rand = Math.floor(Math.random()*15)+1
-      var os = ''
-      var i = 0
-      for (i = 0; i < rand; i++){
-        os += 'o'
-      }
-      var okIan = os + 'k ian'
-      message.channel.send(okIan)
-    break;
   }
   if (message.content.includes('thank')){
     message.channel.send("you're welcome :)")
@@ -108,6 +98,16 @@ client.on('message', message=>{
   }
   else if (message.content.includes('stop')){
     message.channel.send("no :)")
+  }
+  else if (message.content.includes('ok gene')){
+    var rand = Math.floor(Math.random()*15)+1
+      var os = ''
+      var i = 0
+      for (i = 0; i < rand; i++){
+        os += 'o'
+      }
+      var okIan = os + 'k ian'
+      message.channel.send(okIan)
   }
 })
 
