@@ -72,7 +72,14 @@ client.on('message', message=>{
       message.channel.send('I don\'t feel so good')
     break;
     case '*ok gene*':
-      message.channel.send('ok ian')
+      var rand = Math.floor(Math.random()*15)+1
+      var os = ''
+      var i = 0
+      for (i = 0; i < rand; i++){
+        os += 'o'
+      }
+      var okIan = os + 'k ian'
+      message.channel.send(okIan)
     break;
   }
   if (message.content.includes('thank')){
