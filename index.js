@@ -27,7 +27,7 @@ client.on('message', message=>{
   
   if (args[0] === 'random') {
     try{
-    if (args[1] === null || args[2] === null) {
+    if (args[1] !== null || args[2] !== null) {
       var rand1 = args[1]
       var rand2 = args[2]
       var randomNum = Math.floor(Math.random()*(Math.abs(rand2-rand1)+1)+Math.min(rand1, rand2))
