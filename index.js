@@ -22,6 +22,18 @@ client.on('message', message=>{
   if(message.author == client.user){
     return
   }
+  
+  let args = message.content.split(" ")
+  
+  if (args[0] === 'random') {
+    try{
+    var rand1 = args[1]
+    var rand2 = args[2]
+    message.channel.send(Math.floor(Math.random()*(Math.abs(rand2-rand1)+1))+rand1)
+    }
+    catch(ArrayIndexOutofBoundsError){ 
+    }
+  }
 
   switch(message.content){
     case'I\'m hungry':
