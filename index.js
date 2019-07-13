@@ -33,6 +33,8 @@ client.on('message', message=>{
     message.channel.send(randomNum)
     }
     catch(ArrayIndexOutofBoundsError){ 
+      const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/592779094769401924/593098453869920257/confused.jpg')
+      message.channel.send(conf);
     }
   }
 
