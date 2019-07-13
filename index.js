@@ -27,10 +27,16 @@ client.on('message', message=>{
   
   if (args[0] === 'random') {
     try{
-    var rand1 = args[1]
-    var rand2 = args[2]
-    var randomNum = Math.floor(Math.random()*(Math.abs(rand2-rand1)+1)+Math.min(rand1, rand2))
-    message.channel.send(randomNum)
+    if (args[1] === null || args[2] === null) {
+      var rand1 = args[1]
+      var rand2 = args[2]
+      var randomNum = Math.floor(Math.random()*(Math.abs(rand2-rand1)+1)+Math.min(rand1, rand2))
+      message.channel.send(randomNum)
+    }
+      else {
+        const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/592779094769401924/593098453869920257/confused.jpg')
+        message.channel.send(conf);
+      }
     }
     catch(ArrayIndexOutofBoundsError){ 
       const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/592779094769401924/593098453869920257/confused.jpg')
