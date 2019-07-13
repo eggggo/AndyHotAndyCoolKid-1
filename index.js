@@ -29,7 +29,7 @@ client.on('message', message=>{
     try{
     var rand1 = args[1]
     var rand2 = args[2]
-    var randomNum = Math.floor(Math.random()*(Math.abs(rand2-rand1)+1)+rand1)
+    var randomNum = Math.floor(Math.random()*(Math.abs(rand2-rand1)+1)+Math.min(rand1, rand2))
     message.channel.send(randomNum)
     }
     catch(ArrayIndexOutofBoundsError){ 
