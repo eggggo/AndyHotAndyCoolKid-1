@@ -31,6 +31,7 @@ class JoinChannelCommand extends commando.Command {
 "https://www.youtube.com/watch?v=9wnNW4HyDtg", /* Ayaya! Ayaya! Intensifies */
 "https://www.youtube.com/watch?v=Nafii87gdzs", /* Evangelion */
 "https://www.youtube.com/watch?v=n2rVnRwW0h8", /* Cowboy Bebop */
+"https://www.youtube.com/watch?v=3dLqUADUNZ0", /* Attack on Titan */
 
 /* Category: Meme */ 
 
