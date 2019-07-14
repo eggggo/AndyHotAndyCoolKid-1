@@ -25,45 +25,52 @@ class JoinChannelCommand extends commando.Command {
             if(!message.guild.voiceConnection){
                 if(!servers[message.guild.id]){
                     servers[message.guild.id] = {queue: [
-                        "https://www.youtube.com/watch?v=iS2s9deFClY", 
-                        "https://www.youtube.com/watch?v=9wnNW4HyDtg", 
-                        "https://www.youtube.com/watch?v=Ud3nMv44SjA", 
-                        "https://www.youtube.com/watch?v=Lmw4lzjEqD8", 
-                        "https://www.youtube.com/watch?v=_-k6ppRkpcM", 
-                        "https://www.youtube.com/watch?v=dNQs_Bef_V8", 
-                        "https://www.youtube.com/watch?v=kU5KxBYYneA", 
-                        "https://www.youtube.com/watch?v=W3GrSMYbkBE", 
-                        "https://www.youtube.com/watch?v=1S6QDZ47MQE", 
-                        "https://www.youtube.com/watch?v=6n3pFFPSlW4", 
-                        "https://www.youtube.com/watch?v=lXMskKTw3Bc", 
-                        "https://www.youtube.com/watch?v=PfYnvDL0Qcw", 
-                        "https://www.youtube.com/watch?v=O-MQC_G9jTU", 
-                        "https://www.youtube.com/watch?v=09tzb8lkMwE", 
-                        "https://www.youtube.com/watch?v=X2WH8mHJnhM", 
-                        "https://www.youtube.com/watch?v=q6EoRBvdVPQ", 
-                        "https://www.youtube.com/watch?v=XnQ-5uFuDtc",
-                        "https://www.youtube.com/watch?v=IMoGdZLIRn8&list=LL72cjNtbukMkxI0-ohcwotQ&index=64&t=0s",
-                        "https://www.youtube.com/watch?v=vE2ETqUGj6Q&list=PL9TSsKkE-7QK9q7OiPjAst9Gg2rR72wZa&index=2&t=0s",
-                        "https://www.youtube.com/watch?v=9wnNW4HyDtg",
-                        "https://www.youtube.com/watch?v=rY-FJvRqK0E&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=31&t=0s",
-                        "https://www.youtube.com/watch?v=9bdORiwoLho&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=5&t=0s",
-                        "https://www.youtube.com/watch?v=dv13gl0a-FA&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=7&t=0s",
-                        "https://www.youtube.com/watch?v=y6120QOlsfU&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=14&t=0s",
-                        "https://www.youtube.com/watch?v=ZZ5LpwO-An4&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=13&t=0s",
-                        "https://www.youtube.com/watch?v=9JRLCBb7qK8",
-                        "https://www.youtube.com/watch?v=LDU_Txk06tM",
-                        "https://www.youtube.com/watch?v=5NHt1k_9-J8",
-                        "https://www.youtube.com/watch?v=mj-v6zCnEaw",
-                        "https://www.youtube.com/watch?v=0BvfVM0sBfI",
-                        "https://www.youtube.com/watch?v=u3Jr9t_jFcE&list=LL72cjNtbukMkxI0-ohcwotQ&index=128",
-                        "https://www.youtube.com/watch?v=DuVJeJcMod0",
-                        "https://www.youtube.com/watch?v=FSK5Gtf5bkA",
-                        "https://www.youtube.com/watch?v=YYob4uDjEKI",
-                        "https://www.youtube.com/watch?v=9xX8UnHTClk",
-                        "https://www.youtube.com/watch?v=HguKyrS8oWM",
-                        "https://www.youtube.com/watch?v=OiR7JHrSHdA",
-                        "https://www.youtube.com/watch?v=OFjqEexH0Tg",
-                        "https://youtu.be/atuFSv2bLa8"
+                        /*Category: Weeb */
+
+"https://www.youtube.com/watch?v=iS2s9deFClY", /* Chika Dance */
+"https://www.youtube.com/watch?v=9wnNW4HyDtg", /* Ayaya! Ayaya! Intensifies */
+
+/* Category: Meme */ 
+
+"https://www.youtube.com/watch?v=Ud3nMv44SjA", /* Ah shit, here we go again */
+"https://www.youtube.com/watch?v=Lmw4lzjEqD8", /* seal.mp4 */
+"https://www.youtube.com/watch?v=_-k6ppRkpcM", /* the snow storm cant get us here */
+"https://www.youtube.com/watch?v=dNQs_Bef_V8", /* Omae wa mou shindeiru */
+"https://www.youtube.com/watch?v=kU5KxBYYneA", /* KUNAI WIT CHAIN! */
+"https://www.youtube.com/watch?v=6n3pFFPSlW4", /* youve been gnomed.wmv */
+"https://www.youtube.com/watch?v=1S6QDZ47MQE", /* You got jebaited. Vengaboys */
+"https://www.youtube.com/watch?v=q6EoRBvdVPQ", /* Yee */
+"https://www.youtube.com/watch?v=XnQ-5uFuDtc", /* why you heff to be mad? */
+"https://www.youtube.com/watch?v=IMoGdZLIRn8&list=LL72cjNtbukMkxI0-ohcwotQ&index=64&t=0s", /* Hot food vocoded to the piano dub */
+"https://www.youtube.com/watch?v=9bdORiwoLho&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=5&t=0s", /* To Be Continued Sound Effect */
+"https://www.youtube.com/watch?v=0BvfVM0sBfI", /* Oh shit a rat */
+
+/* Category: Meme Song */
+
+"https://www.youtube.com/watch?v=W3GrSMYbkBE", /* Despacito 2 (Parody Video) */
+"https://www.youtube.com/watch?v=lXMskKTw3Bc", /* Never Gonna Hit Those Notes */
+"https://www.youtube.com/watch?v=PfYnvDL0Qcw", /* We are Number One */
+"https://www.youtube.com/watch?v=O-MQC_G9jTU", /* Shooting Stars */
+"https://www.youtube.com/watch?v=09tzb8lkMwE", /* megalovania but beats 2 and 4 are swapped */
+"https://www.youtube.com/watch?v=X2WH8mHJnhM", /* My Heart Will Go On- Recorder */
+"https://www.youtube.com/watch?v=vE2ETqUGj6Q&list=PL9TSsKkE-7QK9q7OiPjAst9Gg2rR72wZa&index=2&t=0s", /* SpongeBob Trap Remix */
+"https://www.youtube.com/watch?v=rY-FJvRqK0E&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=31&t=0s", /* Kero Kero Bonito */
+"https://www.youtube.com/watch?v=dv13gl0a-FA&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=7&t=0s", /* Initial D- Deja Vu */
+"https://www.youtube.com/watch?v=y6120QOlsfU&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=14&t=0s", /* Darude- Sandstorm */
+"https://www.youtube.com/watch?v=ZZ5LpwO-An4&list=PL9TSsKkE-7QJ-P3gKgXl_BL6WOfcIa1yd&index=13&t=0s", /* HEYYEYAAEYAAAEYAEYAA */
+"https://www.youtube.com/watch?v=9JRLCBb7qK8", /* Gay Frogs (Alex Jones REMIX) */
+"https://www.youtube.com/watch?v=LDU_Txk06tM", /* Noisestorm - Crab Rave */
+"https://www.youtube.com/watch?v=5NHt1k_9-J8", /* Ricardo meme song */
+"https://www.youtube.com/watch?v=mj-v6zCnEaw", /* NOMA- Brain Power */
+"https://www.youtube.com/watch?v=u3Jr9t_jFcE&list=LL72cjNtbukMkxI0-ohcwotQ&index=128", /* Kevin MacLeod ~ Volatile Reaction */
+"https://www.youtube.com/watch?v=DuVJeJcMod0", /* 陳彼得 - 阿里巴巴 / Ali Baba (by Peter Chen) */
+"https://www.youtube.com/watch?v=FSK5Gtf5bkA", /* Gym Battle vs. Turkey */
+"https://www.youtube.com/watch?v=YYob4uDjEKI", /* Thomas the Tank Engine Theme Jazz Arrangement */
+"https://www.youtube.com/watch?v=9xX8UnHTClk", /* September Star */
+"https://www.youtube.com/watch?v=HguKyrS8oWM", /* Childish Flamingo */
+"https://www.youtube.com/watch?v=OiR7JHrSHdA", /* K.K. Slider: K.K. Cruisin' */
+"https://www.youtube.com/watch?v=OFjqEexH0Tg", /* Mermaid Sisters Song */
+"https://youtu.be/atuFSv2bLa8" /* Manuel - Gas Gas Gas */
                     ]}
                 }
                 message.member.voiceChannel.join()
