@@ -29,6 +29,7 @@ class JoinChannelCommand extends commando.Command {
 
 "https://www.youtube.com/watch?v=iS2s9deFClY", /* Chika Dance */
 "https://www.youtube.com/watch?v=9wnNW4HyDtg", /* Ayaya! Ayaya! Intensifies */
+"https://www.youtube.com/watch?v=Nafii87gdzs", /* Evangelion */
 
 /* Category: Meme */ 
 
