@@ -62,7 +62,8 @@ class JoinChannelCommand extends commando.Command {
                         "https://www.youtube.com/watch?v=9xX8UnHTClk",
                         "https://www.youtube.com/watch?v=HguKyrS8oWM",
                         "https://www.youtube.com/watch?v=OiR7JHrSHdA",
-                        "https://www.youtube.com/watch?v=OFjqEexH0Tg"
+                        "https://www.youtube.com/watch?v=OFjqEexH0Tg",
+                        "https://youtu.be/atuFSv2bLa8"
                     ]}
                 }
                 message.member.voiceChannel.join()
