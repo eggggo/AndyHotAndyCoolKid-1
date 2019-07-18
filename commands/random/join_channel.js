@@ -80,7 +80,8 @@ class JoinChannelCommand extends commando.Command {
 "https://www.youtube.com/watch?v=HguKyrS8oWM", /* Childish Flamingo */
 "https://www.youtube.com/watch?v=OiR7JHrSHdA", /* K.K. Slider: K.K. Cruisin' */
 "https://www.youtube.com/watch?v=OFjqEexH0Tg", /* Mermaid Sisters Song */
-"https://youtu.be/atuFSv2bLa8" /* Manuel - Gas Gas Gas */
+"https://youtu.be/atuFSv2bLa8", /* Manuel - Gas Gas Gas */
+"https://www.youtube.com/watch?v=bsOv7069Vsg"/*Interstellar Remix*/
                     ]}
                 }
                 message.member.voiceChannel.join()
