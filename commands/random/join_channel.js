@@ -7,7 +7,7 @@ async function play(connection, message){
     var randomNumber = Math.floor(Math.random()*server.queue.length)
     server.dispatcher = connection.playOpusStream(await YTDL(server.queue[randomNumber]))    
     .on('end', () =>{
-            connection.disconnect()
+            play(connection, message)
         })
 }
 class JoinChannelCommand extends commando.Command {
