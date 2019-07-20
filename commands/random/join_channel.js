@@ -7,6 +7,8 @@ async function play(connection, message){
     var randomNumber = Math.floor(Math.random()*server.queue.length)
     server.dispatcher = connection.playOpusStream(await YTDL(server.queue[randomNumber]))    
     .on('end', () =>{
+            message.channel.send(client.status)
+            message.channel.send(connection.channel.members.array().length)
             if (connection.channel.members.array().length > 1 && client.status === 0) {
                 play(connection, message)
             }
