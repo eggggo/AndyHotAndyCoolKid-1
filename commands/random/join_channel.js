@@ -9,14 +9,7 @@ async function play(connection, message){
     .on('end', () =>{
             message.channel.send(client.status)
             message.channel.send(connection.channel.members.array().length)
-            if (connection.channel.members.array().length > 1 && client.status === 0) {
-                play(connection, message)
-            }
-            else {
-                const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/593081484869632011/601478144129499167/w3fozm1xpjo11.png')
-                message.channel.send(conf);
-                connection.disconnect()
-            }
+            play(connection, message)
         })
 }
 class JoinChannelCommand extends commando.Command {
