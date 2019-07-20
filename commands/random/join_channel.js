@@ -5,11 +5,16 @@ const YTDL = require('ytdl-core-discord');
 async function play(connection, message){
     var server = servers[message.guild.id];
     var randomNumber = Math.floor(Math.random()*server.queue.length)
-    server.dispatcher = connection.playOpusStream(await YTDL(server.queue[randomNumber]))    
+    server.dispatcher = connection.playOpusStream(await YTDL(server.queue[randomNumber]))  
     .on('end', () =>{
-            message.channel.send(client.status)
-            message.channel.send(connection.channel.members.array().length)
-            play(connection, message)
+            if (connection.channel.members.array().length > 1) {
+                play(connection, message)
+            }
+            else {
+                const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/593081484869632011/601478144129499167/w3fozm1xpjo11.png')
+                message.channel.send(conf);
+                connection.disconnect()
+            }
         })
 }
 class JoinChannelCommand extends commando.Command {
