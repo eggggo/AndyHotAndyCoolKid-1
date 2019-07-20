@@ -7,13 +7,13 @@ async function play(connection, message){
     var randomNumber = Math.floor(Math.random()*server.queue.length)
     server.dispatcher = connection.playOpusStream(await YTDL(server.queue[randomNumber]))    
     .on('end', () =>{
-            if (connection.channel.members.array().length === 1) {
+            if (connection.channel.members.array().length > 1 && client.status === 0) {
+                play(connection, message)
+            }
+            else
                 const conf = new Discord.Attachment('https://cdn.discordapp.com/attachments/593081484869632011/601478144129499167/w3fozm1xpjo11.png')
                 message.channel.send(conf);
                 connection.disconnect()
-            }
-            else {
-                play(connection, message)
             }
         })
 }
