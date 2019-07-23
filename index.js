@@ -96,7 +96,7 @@ client.on('message', message=>{
   if (message.content.includes('thank')){
     message.channel.send("you're welcome :)")
   }
-  if (message.content.includes('who')){
+  if (message.content.includes('who ')){
     message.channel.send('me :)')
   }
   else if (message.content.toLowerCase().substring(0,3).includes('is ') || 
