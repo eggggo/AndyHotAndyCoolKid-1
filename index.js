@@ -100,7 +100,7 @@ client.on('message', message=>{
     message.channel.send('me :)')
   }
   else if (message.content.toLowerCase().substring(0,3).includes('is ') || 
-           message.content.toLowerCase().includes('does ') || 
+           message.content.toLowerCase().substring(0,5).includes('does ') || 
            message.content.toLowerCase().substring(0,7).includes('should ') ||
            message.content.toLowerCase().substring(0,4).includes('was ') || 
            message.content.toLowerCase().substring(0,5).includes('will ') || 
