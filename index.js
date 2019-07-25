@@ -44,8 +44,8 @@ client.on('message', message=>{
     }
   }
 
-  switch(message.content){
-    case'I\'m hungry':
+  switch(message.content.toLowerCase()){
+    case'i\'m hungry':
       var randomNumber = Math.floor(Math.random()*3+1)
       switch(randomNumber){
         case 1:
@@ -86,13 +86,13 @@ client.on('message', message=>{
     case 'plan':
       message.channel.send('RUSH B NO STOP')
     break;
-    case 'AND DEY SAY':
+    case 'and dey say':
       message.channel.send('CHIVALRY IS DEAD')
     break;
-    case 'Mr. Stark':
+    case 'mr. stark':
       message.channel.send('I don\'t feel so good')
     break;
-    case 'RISHAB':
+    case 'rishab':
       message.channel.send('\"Andy owes me dinner\"')
     break;
   }
