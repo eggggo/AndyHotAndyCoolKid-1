@@ -100,7 +100,7 @@ client.on('message', message=>{
   if (message.content.includes('who ')){
     message.channel.send('me :)')
   }
-  if (message.content.toLowerCase().includes('rishab'){
+  if (message.content.toLowerCase().includes('rishab')){
       message.channel.send('\"Andy owes me dinner\"')
 }
   else if (message.content.toLowerCase().substring(0,3).includes('is ') || 
