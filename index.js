@@ -103,7 +103,7 @@ client.on('message', message=>{
   if (message.content.toLowerCase().includes('rishab')){
       message.channel.send('\"Andy owes me dinner\"')
 }
-  else if (message.content.toLowerCase().substring(0,3).includes('is ') || 
+  if (message.content.toLowerCase().substring(0,3).includes('is ') || 
            message.content.toLowerCase().substring(0,5).includes('does ') || 
            message.content.toLowerCase().substring(0,7).includes('should ') ||
            message.content.toLowerCase().substring(0,4).includes('was ') || 
