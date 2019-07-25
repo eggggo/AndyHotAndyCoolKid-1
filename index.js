@@ -92,6 +92,9 @@ client.on('message', message=>{
     case 'Mr. Stark':
       message.channel.send('I don\'t feel so good')
     break;
+    case '@Brownie$#9941':
+      message.channel.send('\"Andy owes me dinner\"')
+    break;
   }
   if (message.content.includes('thank')){
     message.channel.send("you're welcome :)")
