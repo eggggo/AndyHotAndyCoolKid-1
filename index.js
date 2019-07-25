@@ -92,7 +92,7 @@ client.on('message', message=>{
     case 'Mr. Stark':
       message.channel.send('I don\'t feel so good')
     break;
-    case '@Brownie$#9941':
+    case 'RISHAB':
       message.channel.send('\"Andy owes me dinner\"')
     break;
   }
