@@ -92,16 +92,17 @@ client.on('message', message=>{
     case 'mr. stark':
       message.channel.send('I don\'t feel so good')
     break;
-    case 'rishab':
-      message.channel.send('\"Andy owes me dinner\"')
-    break;
   }
+  
   if (message.content.includes('thank')){
     message.channel.send("you're welcome :)")
   }
   if (message.content.includes('who ')){
     message.channel.send('me :)')
   }
+  if (message.content.toLowerCase().includes('rishab'){
+      message.channel.send('\"Andy owes me dinner\"')
+}
   else if (message.content.toLowerCase().substring(0,3).includes('is ') || 
            message.content.toLowerCase().substring(0,5).includes('does ') || 
            message.content.toLowerCase().substring(0,7).includes('should ') ||
