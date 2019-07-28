@@ -92,6 +92,9 @@ client.on('message', message=>{
     case 'mr. stark':
       message.channel.send('I don\'t feel so good')
     break;
+    case 'lol':
+      message.channel.send('no :)')
+    break;
   }
   
   if (message.content.includes('thank')){
