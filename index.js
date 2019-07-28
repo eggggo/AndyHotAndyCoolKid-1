@@ -93,7 +93,7 @@ client.on('message', message=>{
       message.channel.send('I don\'t feel so good')
     break;
     case 'lol':
-      message.channel.send('no :)')
+      message.channel.send('no ian :)')
     break;
   }
   
